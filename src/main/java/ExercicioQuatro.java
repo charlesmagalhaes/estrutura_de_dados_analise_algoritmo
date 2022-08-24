@@ -4,25 +4,37 @@ public class ExercicioQuatro {
 
 	public static void main(String[] args) {
 		Scanner ler = new Scanner(System.in);
-		int[] pessoas = new int[10];
-		for (int i =0; i< pessoas.length;i++) {
+		int[] valorPorPessoa = new int[10];
+		for (int i =0; i< valorPorPessoa.length;i++) {
 			System.out.print("Informe o valor encontrado no bolso da pessoa "+(i+1)+": ");
-			pessoas[i] = ler.nextInt();
+			valorPorPessoa[i] = ler.nextInt();
 			ler.nextLine();
 		}
 		
-		System.out.println("------------------------------------------------");
+		System.out.println("----------------------------------------------------");
 		
-		System.out.print("Informe o valor encontrado com o bandido que confessou: ");
-		int bandido = ler.nextInt();
+		System.out.print("Informe o valor encontrado com o bandido que confessou e roubou o menor valor: ");
+		int valorBandidoConfesso = ler.nextInt();
 		
-		for (int i =0; i< pessoas.length;i++) {
-			System.out.println("Valor: "+pessoas[i]);
+		System.out.println("------------------------------------------------------");
+		
+		int totalValorRoubado = 0;
+		String pessoaBandida = "";
+		
+		for (int i =0; i< valorPorPessoa.length;i++) {
+			if (valorPorPessoa[i] >= valorBandidoConfesso && valorPorPessoa[i]%10 == 0) {
+				totalValorRoubado += valorPorPessoa[i];
+				pessoaBandida +="Pessoa "+ (i+1)+ ", ";
+			}
 			
 		}
 		
 		
-		System.out.print("Valor encontrado pelo bandido confesso: "+bandido);
+		System.out.println("Total do valor roubado: "+totalValorRoubado+" reais");
+		
+		System.out.println("------------------------------------------------------");
+		
+		System.out.print("Pessoa(s) que roubaram/roubou: "+pessoaBandida);
 
 	}
 
