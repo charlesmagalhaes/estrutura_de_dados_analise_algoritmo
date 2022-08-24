@@ -35,6 +35,8 @@ public class ExercicioQuatro {
 		System.out.println("------------------------------------------------------");
 		
 		System.out.print("Pessoa(s) que roubaram/roubou: "+pessoaBandida);
+		
+		ler.close();
 
 	}
 
