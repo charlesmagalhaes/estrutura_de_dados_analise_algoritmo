@@ -9,7 +9,7 @@ public class ExercicioUm {
 		 System.out.println("----------------------------------------------------------------------");
 
 	        for (int i = 0; i < tabuada.length; i++) {
-	            for (int j = 0; j < tabuada[i].length; j++) {
+	            for (int j = 0; j < tabuada.length; j++) {
 	            	tabuada[i][j] = i+j;
 	            	if(i+j<10) {	            	
 	            		espaco = " ";  
