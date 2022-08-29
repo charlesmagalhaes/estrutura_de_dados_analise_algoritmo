@@ -4,13 +4,13 @@ public class ExercicioDois {
 
     public static void main(String[] args) {
         
-        Scanner scan = new Scanner(System.in);
+        Scanner ler = new Scanner(System.in);
         
         int[] vetorA = new int[10];
         
         for (int i=0; i<vetorA.length; i++){
             System.out.println("Entre com o valor da posição" + i);
-            vetorA[i] = scan.nextInt();
+            vetorA[i] = ler.nextInt();
         }
  
         System.out.print("Vetor A = ");
@@ -33,5 +33,7 @@ public class ExercicioDois {
 			}
 
 		}
+		
+		ler.close();
     }
 }
