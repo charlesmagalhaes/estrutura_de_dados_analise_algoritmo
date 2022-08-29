@@ -18,7 +18,7 @@ public class ExercicioCinco {
 					arrayEscrita[i].setValor(ler.nextInt());
 					arrayEscrita[i].setModificado(true);
 				}else {
-					System.out.println("Esse valor não pode mais ser modificado, pois já foi modificado um vez!");
+					System.out.println("Esse valor não pode mais ser modificado, pois já foi modificado uma vez!");
 				}
 				
 			 }
