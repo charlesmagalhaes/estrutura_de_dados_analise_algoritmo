@@ -3,7 +3,8 @@ public class ExercicioTres {
 
 	public static void main(String[] args) {
 		String[] carroModelo = {"Fusca", "Vectra", "Gol", "Uno", "Palio"};
-		double[] quilometrosPorLitro = {10.9, 11.6, 9.1, 10.3, 13.2 };
+		double[] quilometrosPorLitro = {10.9, 
+				11.6, 9.1, 10.3, 13.2 };
 		
 		double consumoAuxiliar = 0;
 		int index = 0;
