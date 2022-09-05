@@ -9,7 +9,7 @@ public class ExercicioDois {
         int[] vetorA = new int[10];
         
         for (int i=0; i<vetorA.length; i++){
-            System.out.println("Entre com o valor da posição" + i);
+            System.out.print("Entre com o valor da posição " + i +": ");
             vetorA[i] = ler.nextInt();
         }
  
